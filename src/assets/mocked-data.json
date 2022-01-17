@@ -1,0 +1,902 @@
+[
+  {
+    "flightNo": 14063,
+    "origin": "Luxor, Egypt",
+    "destination": "London, UK",
+    "departureDate": "2/18/2022",
+    "departureTime": "18:45",
+    "duration": 5,
+    "fare": 1653
+  },
+  {
+    "flightNo": 13808,
+    "origin": "Alexandria, Egypt",
+    "destination": "London, UK",
+    "departureDate": "2/19/2022",
+    "departureTime": "13:30",
+    "duration": 4,
+    "fare": 1267
+  },
+  {
+    "flightNo": 14128,
+    "origin": "Cairo, Egypt",
+    "destination": "Paris, France",
+    "departureDate": "1/25/2022",
+    "departureTime": "13:30",
+    "duration": 6,
+    "fare": 1741
+  },
+  {
+    "flightNo": 11928,
+    "origin": "Cairo, Egypt",
+    "destination": "Paris, France",
+    "departureDate": "3/11/2022",
+    "departureTime": "13:45",
+    "duration": 6,
+    "fare": 2845
+  },
+  {
+    "flightNo": 14714,
+    "origin": "Alexandria, Egypt",
+    "destination": "Paris, France",
+    "departureDate": "3/22/2022",
+    "departureTime": "03:30",
+    "duration": 5,
+    "fare": 2400
+  },
+  {
+    "flightNo": 14072,
+    "origin": "Cairo, Egypt",
+    "destination": "London, UK",
+    "departureDate": "3/14/2022",
+    "departureTime": "17:15",
+    "duration": 5,
+    "fare": 4362
+  },
+  {
+    "flightNo": 11381,
+    "origin": "Luxor, Egypt",
+    "destination": "San Francisco, US",
+    "departureDate": "1/27/2022",
+    "departureTime": "09:00",
+    "duration": 6,
+    "fare": 3352
+  },
+  {
+    "flightNo": 14005,
+    "origin": "Luxor, Egypt",
+    "destination": "Paris, France",
+    "departureDate": "2/3/2022",
+    "departureTime": "20:45",
+    "duration": 11,
+    "fare": 1778
+  },
+  {
+    "flightNo": 14408,
+    "origin": "Luxor, Egypt",
+    "destination": "London, UK",
+    "departureDate": "3/15/2022",
+    "departureTime": "17:30",
+    "duration": 5,
+    "fare": 3579
+  },
+  {
+    "flightNo": 13785,
+    "origin": "Cairo, Egypt",
+    "destination": "San Francisco, US",
+    "departureDate": "2/1/2022",
+    "departureTime": "14:30",
+    "duration": 20,
+    "fare": 3219
+  },
+  {
+    "flightNo": 12050,
+    "origin": "Cairo, Egypt",
+    "destination": "London, UK",
+    "departureDate": "2/23/2022",
+    "departureTime": "01:00",
+    "duration": 5,
+    "fare": 2624
+  },
+  {
+    "flightNo": 11838,
+    "origin": "Cairo, Egypt",
+    "destination": "Istanbul, Turkey",
+    "departureDate": "2/7/2022",
+    "departureTime": "16:15",
+    "duration": 3,
+    "fare": 2767
+  },
+  {
+    "flightNo": 13127,
+    "origin": "Luxor, Egypt",
+    "destination": "Istanbul, Turkey",
+    "departureDate": "3/11/2022",
+    "departureTime": "09:30",
+    "duration": 10,
+    "fare": 4165
+  },
+  {
+    "flightNo": 13246,
+    "origin": "Luxor, Egypt",
+    "destination": "San Francisco, US",
+    "departureDate": "2/17/2022",
+    "departureTime": "00:45",
+    "duration": 6,
+    "fare": 3730
+  },
+  {
+    "flightNo": 14684,
+    "origin": "Cairo, Egypt",
+    "destination": "San Francisco, US",
+    "departureDate": "3/3/2022",
+    "departureTime": "06:30",
+    "duration": 20,
+    "fare": 2267
+  },
+  {
+    "flightNo": 14576,
+    "origin": "Cairo, Egypt",
+    "destination": "Paris, France",
+    "departureDate": "3/1/2022",
+    "departureTime": "13:00",
+    "duration": 6,
+    "fare": 4331
+  },
+  {
+    "flightNo": 12875,
+    "origin": "Cairo, Egypt",
+    "destination": "London, UK",
+    "departureDate": "2/2/2022",
+    "departureTime": "09:45",
+    "duration": 5,
+    "fare": 4510
+  },
+  {
+    "flightNo": 11389,
+    "origin": "Luxor, Egypt",
+    "destination": "Istanbul, Turkey",
+    "departureDate": "2/10/2022",
+    "departureTime": "13:15",
+    "duration": 10,
+    "fare": 4642
+  },
+  {
+    "flightNo": 13551,
+    "origin": "Luxor, Egypt",
+    "destination": "Istanbul, Turkey",
+    "departureDate": "2/24/2022",
+    "departureTime": "04:15",
+    "duration": 10,
+    "fare": 1717
+  },
+  {
+    "flightNo": 13999,
+    "origin": "Hurghada, Egypt",
+    "destination": "Paris, France",
+    "departureDate": "1/30/2022",
+    "departureTime": "16:45",
+    "duration": 8,
+    "fare": 3236
+  },
+  {
+    "flightNo": 14527,
+    "origin": "Cairo, Egypt",
+    "destination": "London, UK",
+    "departureDate": "3/30/2022",
+    "departureTime": "07:45",
+    "duration": 5,
+    "fare": 1828
+  },
+  {
+    "flightNo": 12022,
+    "origin": "Luxor, Egypt",
+    "destination": "San Francisco, US",
+    "departureDate": "2/22/2022",
+    "departureTime": "08:00",
+    "duration": 6,
+    "fare": 4376
+  },
+  {
+    "flightNo": 12109,
+    "origin": "Hurghada, Egypt",
+    "destination": "Paris, France",
+    "departureDate": "3/6/2022",
+    "departureTime": "11:30",
+    "duration": 8,
+    "fare": 4691
+  },
+  {
+    "flightNo": 13173,
+    "origin": "Alexandria, Egypt",
+    "destination": "Istanbul, Turkey",
+    "departureDate": "2/22/2022",
+    "departureTime": "06:15",
+    "duration": 7,
+    "fare": 1303
+  },
+  {
+    "flightNo": 13767,
+    "origin": "Hurghada, Egypt",
+    "destination": "London, UK",
+    "departureDate": "2/19/2022",
+    "departureTime": "09:45",
+    "duration": 6,
+    "fare": 2015
+  },
+  {
+    "flightNo": 13816,
+    "origin": "Cairo, Egypt",
+    "destination": "San Francisco, US",
+    "departureDate": "3/18/2022",
+    "departureTime": "23:00",
+    "duration": 20,
+    "fare": 4252
+  },
+  {
+    "flightNo": 12013,
+    "origin": "Cairo, Egypt",
+    "destination": "San Francisco, US",
+    "departureDate": "3/23/2022",
+    "departureTime": "04:00",
+    "duration": 20,
+    "fare": 1640
+  },
+  {
+    "flightNo": 13646,
+    "origin": "Hurghada, Egypt",
+    "destination": "Paris, France",
+    "departureDate": "3/20/2022",
+    "departureTime": "00:45",
+    "duration": 8,
+    "fare": 2122
+  },
+  {
+    "flightNo": 12500,
+    "origin": "Alexandria, Egypt",
+    "destination": "San Francisco, US",
+    "departureDate": "3/18/2022",
+    "departureTime": "18:00",
+    "duration": 17,
+    "fare": 4448
+  },
+  {
+    "flightNo": 13486,
+    "origin": "Luxor, Egypt",
+    "destination": "London, UK",
+    "departureDate": "2/1/2022",
+    "departureTime": "09:45",
+    "duration": 5,
+    "fare": 1346
+  },
+  {
+    "flightNo": 13194,
+    "origin": "Luxor, Egypt",
+    "destination": "Istanbul, Turkey",
+    "departureDate": "1/28/2022",
+    "departureTime": "00:15",
+    "duration": 10,
+    "fare": 1224
+  },
+  {
+    "flightNo": 11166,
+    "origin": "Alexandria, Egypt",
+    "destination": "San Francisco, US",
+    "departureDate": "2/7/2022",
+    "departureTime": "03:30",
+    "duration": 17,
+    "fare": 2340
+  },
+  {
+    "flightNo": 14634,
+    "origin": "Luxor, Egypt",
+    "destination": "London, UK",
+    "departureDate": "1/26/2022",
+    "departureTime": "00:15",
+    "duration": 5,
+    "fare": 2403
+  },
+  {
+    "flightNo": 14145,
+    "origin": "Luxor, Egypt",
+    "destination": "Istanbul, Turkey",
+    "departureDate": "3/22/2022",
+    "departureTime": "23:45",
+    "duration": 10,
+    "fare": 1339
+  },
+  {
+    "flightNo": 13544,
+    "origin": "Alexandria, Egypt",
+    "destination": "San Francisco, US",
+    "departureDate": "1/29/2022",
+    "departureTime": "15:30",
+    "duration": 17,
+    "fare": 1443
+  },
+  {
+    "flightNo": 11565,
+    "origin": "Cairo, Egypt",
+    "destination": "San Francisco, US",
+    "departureDate": "3/21/2022",
+    "departureTime": "13:45",
+    "duration": 20,
+    "fare": 4360
+  },
+  {
+    "flightNo": 13478,
+    "origin": "Luxor, Egypt",
+    "destination": "Paris, France",
+    "departureDate": "3/21/2022",
+    "departureTime": "02:45",
+    "duration": 11,
+    "fare": 1823
+  },
+  {
+    "flightNo": 12566,
+    "origin": "Alexandria, Egypt",
+    "destination": "Paris, France",
+    "departureDate": "2/6/2022",
+    "departureTime": "20:30",
+    "duration": 5,
+    "fare": 1968
+  },
+  {
+    "flightNo": 13756,
+    "origin": "Alexandria, Egypt",
+    "destination": "London, UK",
+    "departureDate": "1/22/2022",
+    "departureTime": "06:15",
+    "duration": 4,
+    "fare": 3790
+  },
+  {
+    "flightNo": 13299,
+    "origin": "Hurghada, Egypt",
+    "destination": "London, UK",
+    "departureDate": "3/28/2022",
+    "departureTime": "23:15",
+    "duration": 6,
+    "fare": 4626
+  },
+  {
+    "flightNo": 14506,
+    "origin": "Alexandria, Egypt",
+    "destination": "San Francisco, US",
+    "departureDate": "2/2/2022",
+    "departureTime": "17:00",
+    "duration": 17,
+    "fare": 3363
+  },
+  {
+    "flightNo": 11573,
+    "origin": "Alexandria, Egypt",
+    "destination": "Paris, France",
+    "departureDate": "3/31/2022",
+    "departureTime": "16:15",
+    "duration": 5,
+    "fare": 1086
+  },
+  {
+    "flightNo": 14050,
+    "origin": "Cairo, Egypt",
+    "destination": "San Francisco, US",
+    "departureDate": "2/20/2022",
+    "departureTime": "08:45",
+    "duration": 20,
+    "fare": 2502
+  },
+  {
+    "flightNo": 14687,
+    "origin": "Cairo, Egypt",
+    "destination": "Istanbul, Turkey",
+    "departureDate": "2/6/2022",
+    "departureTime": "00:00",
+    "duration": 3,
+    "fare": 4088
+  },
+  {
+    "flightNo": 12285,
+    "origin": "Luxor, Egypt",
+    "destination": "London, UK",
+    "departureDate": "3/7/2022",
+    "departureTime": "18:15",
+    "duration": 5,
+    "fare": 1037
+  },
+  {
+    "flightNo": 11969,
+    "origin": "Hurghada, Egypt",
+    "destination": "Istanbul, Turkey",
+    "departureDate": "3/1/2022",
+    "departureTime": "10:30",
+    "duration": 9,
+    "fare": 1811
+  },
+  {
+    "flightNo": 14778,
+    "origin": "Luxor, Egypt",
+    "destination": "Paris, France",
+    "departureDate": "3/27/2022",
+    "departureTime": "17:00",
+    "duration": 11,
+    "fare": 1939
+  },
+  {
+    "flightNo": 13045,
+    "origin": "Luxor, Egypt",
+    "destination": "San Francisco, US",
+    "departureDate": "2/12/2022",
+    "departureTime": "18:30",
+    "duration": 6,
+    "fare": 1023
+  },
+  {
+    "flightNo": 12786,
+    "origin": "Hurghada, Egypt",
+    "destination": "Paris, France",
+    "departureDate": "3/10/2022",
+    "departureTime": "09:45",
+    "duration": 8,
+    "fare": 1215
+  },
+  {
+    "flightNo": 13175,
+    "origin": "Alexandria, Egypt",
+    "destination": "Paris, France",
+    "departureDate": "2/26/2022",
+    "departureTime": "00:45",
+    "duration": 5,
+    "fare": 4900
+  },
+  {
+    "flightNo": 14301,
+    "origin": "Paris, France",
+    "destination": "Cairo, Egypt",
+    "departureDate": "1/22/2022",
+    "departureTime": "13:30",
+    "duration": 5,
+    "fare": 4136
+  },
+  {
+    "flightNo": 12854,
+    "origin": "London, UK",
+    "destination": "Alexandria, Egypt",
+    "departureDate": "2/28/2022",
+    "departureTime": "16:00",
+    "duration": 20,
+    "fare": 1076
+  },
+  {
+    "flightNo": 11692,
+    "origin": "Istanbul, Turkey",
+    "destination": "Alexandria, Egypt",
+    "departureDate": "2/26/2022",
+    "departureTime": "12:15",
+    "duration": 5,
+    "fare": 2352
+  },
+  {
+    "flightNo": 13983,
+    "origin": "San Francisco, US",
+    "destination": "Cairo, Egypt",
+    "departureDate": "2/19/2022",
+    "departureTime": "01:45",
+    "duration": 4,
+    "fare": 3233
+  },
+  {
+    "flightNo": 15089,
+    "origin": "San Francisco, US",
+    "destination": "Cairo, Egypt",
+    "departureDate": "2/1/2022",
+    "departureTime": "11:30",
+    "duration": 4,
+    "fare": 1754
+  },
+  {
+    "flightNo": 11436,
+    "origin": "London, UK",
+    "destination": "Alexandria, Egypt",
+    "departureDate": "3/16/2022",
+    "departureTime": "19:00",
+    "duration": 20,
+    "fare": 3191
+  },
+  {
+    "flightNo": 12022,
+    "origin": "Paris, France",
+    "destination": "Cairo, Egypt",
+    "departureDate": "2/18/2022",
+    "departureTime": "05:15",
+    "duration": 5,
+    "fare": 2527
+  },
+  {
+    "flightNo": 14095,
+    "origin": "London, UK",
+    "destination": "Hurghada, Egypt",
+    "departureDate": "1/28/2022",
+    "departureTime": "15:30",
+    "duration": 3,
+    "fare": 1149
+  },
+  {
+    "flightNo": 14671,
+    "origin": "Istanbul, Turkey",
+    "destination": "Hurghada, Egypt",
+    "departureDate": "3/30/2022",
+    "departureTime": "22:00",
+    "duration": 9,
+    "fare": 4919
+  },
+  {
+    "flightNo": 14680,
+    "origin": "Paris, France",
+    "destination": "Hurghada, Egypt",
+    "departureDate": "2/14/2022",
+    "departureTime": "08:00",
+    "duration": 10,
+    "fare": 1061
+  },
+  {
+    "flightNo": 11961,
+    "origin": "Paris, France",
+    "destination": "Cairo, Egypt",
+    "departureDate": "3/17/2022",
+    "departureTime": "15:00",
+    "duration": 5,
+    "fare": 2741
+  },
+  {
+    "flightNo": 13457,
+    "origin": "San Francisco, US",
+    "destination": "Hurghada, Egypt",
+    "departureDate": "1/22/2022",
+    "departureTime": "05:30",
+    "duration": 7,
+    "fare": 4417
+  },
+  {
+    "flightNo": 11777,
+    "origin": "Istanbul, Turkey",
+    "destination": "Hurghada, Egypt",
+    "departureDate": "3/20/2022",
+    "departureTime": "17:45",
+    "duration": 9,
+    "fare": 3850
+  },
+  {
+    "flightNo": 13143,
+    "origin": "Istanbul, Turkey",
+    "destination": "Hurghada, Egypt",
+    "departureDate": "3/24/2022",
+    "departureTime": "20:45",
+    "duration": 9,
+    "fare": 1794
+  },
+  {
+    "flightNo": 14853,
+    "origin": "Paris, France",
+    "destination": "Luxor, Egypt",
+    "departureDate": "3/8/2022",
+    "departureTime": "20:15",
+    "duration": 11,
+    "fare": 4872
+  },
+  {
+    "flightNo": 13904,
+    "origin": "London, UK",
+    "destination": "Luxor, Egypt",
+    "departureDate": "3/23/2022",
+    "departureTime": "15:00",
+    "duration": 6,
+    "fare": 4714
+  },
+  {
+    "flightNo": 11997,
+    "origin": "Paris, France",
+    "destination": "Alexandria, Egypt",
+    "departureDate": "2/7/2022",
+    "departureTime": "07:15",
+    "duration": 6,
+    "fare": 2742
+  },
+  {
+    "flightNo": 14981,
+    "origin": "Istanbul, Turkey",
+    "destination": "Luxor, Egypt",
+    "departureDate": "2/1/2022",
+    "departureTime": "03:00",
+    "duration": 8,
+    "fare": 2635
+  },
+  {
+    "flightNo": 13021,
+    "origin": "Istanbul, Turkey",
+    "destination": "Luxor, Egypt",
+    "departureDate": "1/26/2022",
+    "departureTime": "06:15",
+    "duration": 8,
+    "fare": 4307
+  },
+  {
+    "flightNo": 14320,
+    "origin": "Istanbul, Turkey",
+    "destination": "Alexandria, Egypt",
+    "departureDate": "2/19/2022",
+    "departureTime": "20:15",
+    "duration": 5,
+    "fare": 3774
+  },
+  {
+    "flightNo": 11339,
+    "origin": "Paris, France",
+    "destination": "Hurghada, Egypt",
+    "departureDate": "1/22/2022",
+    "departureTime": "07:45",
+    "duration": 10,
+    "fare": 1983
+  },
+  {
+    "flightNo": 12416,
+    "origin": "San Francisco, US",
+    "destination": "Alexandria, Egypt",
+    "departureDate": "3/4/2022",
+    "departureTime": "00:15",
+    "duration": 17,
+    "fare": 2987
+  },
+  {
+    "flightNo": 14396,
+    "origin": "London, UK",
+    "destination": "Luxor, Egypt",
+    "departureDate": "2/13/2022",
+    "departureTime": "20:45",
+    "duration": 6,
+    "fare": 4475
+  },
+  {
+    "flightNo": 12160,
+    "origin": "Istanbul, Turkey",
+    "destination": "Hurghada, Egypt",
+    "departureDate": "2/10/2022",
+    "departureTime": "08:00",
+    "duration": 9,
+    "fare": 2719
+  },
+  {
+    "flightNo": 14053,
+    "origin": "Paris, France",
+    "destination": "Alexandria, Egypt",
+    "departureDate": "3/3/2022",
+    "departureTime": "13:45",
+    "duration": 6,
+    "fare": 3613
+  },
+  {
+    "flightNo": 14607,
+    "origin": "Istanbul, Turkey",
+    "destination": "Alexandria, Egypt",
+    "departureDate": "1/19/2022",
+    "departureTime": "19:15",
+    "duration": 5,
+    "fare": 2332
+  },
+  {
+    "flightNo": 13077,
+    "origin": "Istanbul, Turkey",
+    "destination": "Cairo, Egypt",
+    "departureDate": "2/27/2022",
+    "departureTime": "18:15",
+    "duration": 6,
+    "fare": 1859
+  },
+  {
+    "flightNo": 13143,
+    "origin": "Istanbul, Turkey",
+    "destination": "Cairo, Egypt",
+    "departureDate": "3/10/2022",
+    "departureTime": "04:00",
+    "duration": 6,
+    "fare": 1606
+  },
+  {
+    "flightNo": 11678,
+    "origin": "Istanbul, Turkey",
+    "destination": "Luxor, Egypt",
+    "departureDate": "3/6/2022",
+    "departureTime": "22:00",
+    "duration": 8,
+    "fare": 4805
+  },
+  {
+    "flightNo": 14420,
+    "origin": "San Francisco, US",
+    "destination": "Luxor, Egypt",
+    "departureDate": "2/26/2022",
+    "departureTime": "06:00",
+    "duration": 5,
+    "fare": 1267
+  },
+  {
+    "flightNo": 14247,
+    "origin": "Istanbul, Turkey",
+    "destination": "Cairo, Egypt",
+    "departureDate": "2/15/2022",
+    "departureTime": "13:45",
+    "duration": 6,
+    "fare": 1541
+  },
+  {
+    "flightNo": 14988,
+    "origin": "San Francisco, US",
+    "destination": "Hurghada, Egypt",
+    "departureDate": "3/11/2022",
+    "departureTime": "05:30",
+    "duration": 7,
+    "fare": 4850
+  },
+  {
+    "flightNo": 12273,
+    "origin": "Istanbul, Turkey",
+    "destination": "Alexandria, Egypt",
+    "departureDate": "1/23/2022",
+    "departureTime": "03:00",
+    "duration": 5,
+    "fare": 2226
+  },
+  {
+    "flightNo": 14997,
+    "origin": "Istanbul, Turkey",
+    "destination": "Alexandria, Egypt",
+    "departureDate": "3/7/2022",
+    "departureTime": "01:45",
+    "duration": 5,
+    "fare": 2553
+  },
+  {
+    "flightNo": 12416,
+    "origin": "San Francisco, US",
+    "destination": "Alexandria, Egypt",
+    "departureDate": "1/19/2022",
+    "departureTime": "14:30",
+    "duration": 17,
+    "fare": 4924
+  },
+  {
+    "flightNo": 13990,
+    "origin": "San Francisco, US",
+    "destination": "Alexandria, Egypt",
+    "departureDate": "2/14/2022",
+    "departureTime": "23:30",
+    "duration": 17,
+    "fare": 1925
+  },
+  {
+    "flightNo": 11836,
+    "origin": "San Francisco, US",
+    "destination": "Cairo, Egypt",
+    "departureDate": "2/9/2022",
+    "departureTime": "15:45",
+    "duration": 4,
+    "fare": 4248
+  },
+  {
+    "flightNo": 14781,
+    "origin": "San Francisco, US",
+    "destination": "Cairo, Egypt",
+    "departureDate": "2/22/2022",
+    "departureTime": "14:00",
+    "duration": 4,
+    "fare": 1872
+  },
+  {
+    "flightNo": 11531,
+    "origin": "Istanbul, Turkey",
+    "destination": "Luxor, Egypt",
+    "departureDate": "3/17/2022",
+    "departureTime": "01:15",
+    "duration": 8,
+    "fare": 3003
+  },
+  {
+    "flightNo": 13667,
+    "origin": "Paris, France",
+    "destination": "Hurghada, Egypt",
+    "departureDate": "1/27/2022",
+    "departureTime": "11:15",
+    "duration": 10,
+    "fare": 1646
+  },
+  {
+    "flightNo": 14021,
+    "origin": "San Francisco, US",
+    "destination": "Hurghada, Egypt",
+    "departureDate": "3/20/2022",
+    "departureTime": "01:30",
+    "duration": 7,
+    "fare": 2307
+  },
+  {
+    "flightNo": 14562,
+    "origin": "San Francisco, US",
+    "destination": "Cairo, Egypt",
+    "departureDate": "3/26/2022",
+    "departureTime": "11:00",
+    "duration": 4,
+    "fare": 3965
+  },
+  {
+    "flightNo": 12176,
+    "origin": "London, UK",
+    "destination": "Cairo, Egypt",
+    "departureDate": "2/12/2022",
+    "departureTime": "00:30",
+    "duration": 5,
+    "fare": 2423
+  },
+  {
+    "flightNo": 12101,
+    "origin": "Istanbul, Turkey",
+    "destination": "Luxor, Egypt",
+    "departureDate": "2/12/2022",
+    "departureTime": "05:45",
+    "duration": 8,
+    "fare": 2314
+  },
+  {
+    "flightNo": 11553,
+    "origin": "Istanbul, Turkey",
+    "destination": "Hurghada, Egypt",
+    "departureDate": "2/18/2022",
+    "departureTime": "03:45",
+    "duration": 9,
+    "fare": 3085
+  },
+  {
+    "flightNo": 12816,
+    "origin": "San Francisco, US",
+    "destination": "Alexandria, Egypt",
+    "departureDate": "3/2/2022",
+    "departureTime": "18:45",
+    "duration": 17,
+    "fare": 2844
+  },
+  {
+    "flightNo": 13088,
+    "origin": "Paris, France",
+    "destination": "Cairo, Egypt",
+    "departureDate": "3/10/2022",
+    "departureTime": "16:30",
+    "duration": 5,
+    "fare": 3471
+  },
+  {
+    "flightNo": 12906,
+    "origin": "Istanbul, Turkey",
+    "destination": "Cairo, Egypt",
+    "departureDate": "1/19/2022",
+    "departureTime": "13:15",
+    "duration": 6,
+    "fare": 3155
+  },
+  {
+    "flightNo": 13194,
+    "origin": "San Francisco, US",
+    "destination": "Hurghada, Egypt",
+    "departureDate": "3/6/2022",
+    "departureTime": "02:15",
+    "duration": 7,
+    "fare": 1756
+  },
+  {
+    "flightNo": 14975,
+    "origin": "San Francisco, US",
+    "destination": "Cairo, Egypt",
+    "departureDate": "3/31/2022",
+    "departureTime": "01:15",
+    "duration": 4,
+    "fare": 1014
+  }
+]
