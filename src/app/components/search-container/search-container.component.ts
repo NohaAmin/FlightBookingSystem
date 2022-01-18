@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FlightData} from "../../models/flight-data";
 
 @Component({
@@ -19,8 +19,6 @@ export class SearchContainerComponent implements OnInit {
   selectedDate: Date | null = null;
   today: Date = new Date()
   minAllowedDate: Date = new Date(this.today.getFullYear(), this.today.getMonth(), this.today.getDate() + 1);
-  // activateSearch = false;
-  isRendered = false;
 
   constructor() {
   }
@@ -29,7 +27,6 @@ export class SearchContainerComponent implements OnInit {
     this.allRoutePoints = this.getRoutePointsSet(this.allFlights);
     this.allOriginItems = [...this.allRoutePoints];
     this.allDestinationItems = [...this.allRoutePoints];
-    this.isRendered = true;
   }
 
   onSelectingOrigin() {
@@ -57,14 +54,7 @@ export class SearchContainerComponent implements OnInit {
 
   selectDateModel() {
     this.combineSearchFactors();
-    console.log('selectDateModel', this.selectedDate)
   }
-
-  // activeSearchButton(): void {
-  //   this.activateSearch = (!!this.selectedOrigin || !!this.selectedDestination || !!this.selectedDate);
-  //
-
-  // }
 
   combineSearchFactors() {
     const copyAllFlights = [...this.allFlights];
@@ -75,7 +65,7 @@ export class SearchContainerComponent implements OnInit {
       filteredWithOrigin.filter((f) => f.destination === this.selectedDestination) : filteredWithOrigin;
 
     const filteredWithDate: FlightData[] = (!!this.selectedDate) ?
-      filteredWithDestination.filter((f) => f.departureDate === this.selectedDate) : filteredWithDestination;
+      filteredWithDestination.filter((f) => f.departureDate.toString() === this.selectedDate?.toLocaleDateString()) : filteredWithDestination;
 
     this.searchFlights.emit(filteredWithDate);
   }

@@ -13,7 +13,10 @@
         (searchFlights)="showingFilteredFlights($event)"
       ></app-search-container>
 
-      <app-flights-datatable [flightData]="displayedFlights"
+<!--        *ngIf="!!flightData.length"-->
+<!--        [flightData]="displayedFlights"-->
+      <app-flights-datatable
+        [flightData$]="displayedFlights$"
       ></app-flights-datatable>
     </div>
   </div>

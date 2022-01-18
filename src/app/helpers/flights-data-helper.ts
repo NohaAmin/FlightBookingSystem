@@ -21,7 +21,9 @@ export class FlightsDataHelper {
       case "date":
         return arrivalDate.toLocaleDateString();
       case "time":
-        return `${arrivalDate.getHours()}:${arrivalDate.getMinutes()}`
+        const outputHours = ((arrivalDate.getHours() < 10)? '0' : '') + `${arrivalDate.getHours()}`
+        const outputMinutes = `${arrivalDate.getMinutes()}` + ((arrivalDate.getMinutes() < 10)? '0' : '')
+        return `${outputHours}:${outputMinutes}`
     }
   }
 }
