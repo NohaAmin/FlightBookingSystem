@@ -1,0 +1,45 @@
+<!--<div class="d-flex flex-column gap-5">-->
+
+  <div class="d-flex flex-wrap justify-content-between gap-5">
+    <!-- Filter By Origin -->
+    <div class="search-flight-dropdown flex-grow-1 flex-shrink-1">
+      <p-dropdown
+        [options]="allOriginItems.sort()"
+        [(ngModel)]="selectedOrigin"
+        (ngModelChange)="onSelectingOrigin()"
+        placeholder="Select Origin"
+        [showClear]="true"></p-dropdown>
+    </div>
+
+    <!-- Filter By Destination -->
+    <div class="search-flight-dropdown flex-grow-1 flex-shrink-1">
+      <p-dropdown
+        [options]="allDestinationItems.sort()"
+        [(ngModel)]="selectedDestination"
+        (ngModelChange)="onSelectingDestination()"
+        placeholder="Select Destination"
+        [showClear]="true"></p-dropdown>
+    </div>
+
+    <!-- Filter By Departure -->
+    <div class="search-flight-dropdown flex-grow-1 flex-shrink-1">
+      <p-calendar
+        [(ngModel)]="selectedDate"
+        [minDate]="minAllowedDate"
+        dateFormat="M d,yy"
+        selectionMode="single" [showIcon]="true"
+        [showButtonBar]="true"
+        [readonlyInput]="true" inputId="range"
+        placeholder="Select Departure Date"
+        (ngModelChange)="selectDateModel()"
+      ></p-calendar>
+    </div>
+  </div>
+
+<!--  <button-->
+<!--    type="button" [disabled]="!activateSearch"-->
+<!--    class="btn btn-primary fs-3 text-light px-3 py-1 border-primary rounded w-auto align-self-end"-->
+<!--    (click)="combineSearchFactors()"-->
+<!--  >-->
+<!--    {{'Search'}}</button>-->
+<!--</div>-->

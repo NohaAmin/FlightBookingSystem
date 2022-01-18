@@ -9,24 +9,34 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import {TableModule} from "primeng/table";
 import {PaginatorModule} from "primeng/paginator";
-import { SearchPageComponent } from './pages/search-page/search-page.component';
-import { FlightsDatasheetComponent } from './components/flights-datasheet/flights-datasheet.component';
+import { SearchContainerComponent } from './components/search-container/search-container.component';
+import { FlightsDatatableComponent } from './components/flights-datatable/flights-datatable.component';
+import { AllFlightsDataComponent } from './pages/all-flights-data/all-flights-data.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {DropdownModule} from "primeng/dropdown";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {CalendarModule} from "primeng/calendar";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     TicketFormComponent,
-    SearchPageComponent,
-    FlightsDatasheetComponent
+    SearchContainerComponent,
+    FlightsDatatableComponent,
+    AllFlightsDataComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
     TableModule,
-    PaginatorModule
+    PaginatorModule,
+    NgbModule,
+    DropdownModule,
+    CalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

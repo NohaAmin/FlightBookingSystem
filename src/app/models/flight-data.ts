@@ -3,9 +3,9 @@ export interface FlightData {
   origin: string;
   destination: string;
   departureDate: string | Date;
-  departureTime: string | Date;
+  departureTime: string;
   arrivalDate: string | Date;
-  arrivalTime: string | Date;
+  arrivalTime: string;
   duration: number;
   fare: string;
 }

@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
 
 .app-main-variables {
   --main-light-color-theme: #908faf;
   --main-light-background: #f2f0f0;
   --yellow-rate-bookmark: #FACA1DFF;
 }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

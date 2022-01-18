@@ -3,7 +3,7 @@ export interface JsonModel {
   origin: string;
   destination: string;
   departureDate: string | Date;
-  departureTime: string | Date;
+  departureTime: string;
   duration: number;
   fare: number;
 }

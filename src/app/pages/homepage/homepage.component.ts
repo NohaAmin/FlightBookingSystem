@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FlightsDataService} from "../../services/flights-data.service";
 import {FlightData} from "../../models/flight-data";
-import {Router} from "@angular/router";
+import {FlightsDataHelper} from "../../helpers/flights-data-helper";
 
 @Component({
   selector: 'app-homepage',
@@ -11,19 +11,27 @@ import {Router} from "@angular/router";
 export class HomepageComponent implements OnInit {
 
   flightData: FlightData[] = [];
-  readonly flightDataHeaders: string[] = ['Flight No.', 'Origin', 'Destination', 'Departure Date', 'Departure Time', 'Arrival Date', 'Arrival Time', 'Fare'];
+  displayedFlights: FlightData[] = [];
+  // displayedFlights: ReplaySubject<FlightData[]> = new ReplaySubject<FlightData[]>()
 
-  constructor(private flightsDataService: FlightsDataService,
-              private router: Router) { }
+  constructor(private flightsDataService: FlightsDataService) { }
 
   ngOnInit(): void {
     this.flightsDataService.getFlightData().subscribe((res) => {
       this.flightData = res;
+      this.displayedFlights = res;
+
+      let value = this.flightData[0]
+
+      let testDate = FlightsDataHelper.mapDateTimeValue(value.departureDate, value.departureTime, value.duration, 'date')
+      let testTime = FlightsDataHelper.mapDateTimeValue(value.departureDate, value.departureTime, value.duration, 'time');
+
+      console.log('departureDate', value.departureDate, 'departureTime', value.departureTime, 'duration', value.duration)
+      console.log('testDate', testDate, 'testTime', testTime)
     })
   }
 
-  onSelectingItem(item: FlightData) {
-    console.log('onSelectingItem', item);
-    this.router.navigateByUrl(`flight-dashboard/${item.flightNo}/ticket`).then();
+  showingFilteredFlights(selected: FlightData[]) {
+    this.displayedFlights = selected;
   }
 }

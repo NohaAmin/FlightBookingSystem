@@ -678,7 +678,7 @@
     "flightNo": 14607,
     "origin": "Istanbul, Turkey",
     "destination": "Alexandria, Egypt",
-    "departureDate": "1/19/2022",
+    "departureDate": "1/29/2022",
     "departureTime": "19:15",
     "duration": 5,
     "fare": 2332
@@ -759,7 +759,7 @@
     "flightNo": 12416,
     "origin": "San Francisco, US",
     "destination": "Alexandria, Egypt",
-    "departureDate": "1/19/2022",
+    "departureDate": "2/19/2022",
     "departureTime": "14:30",
     "duration": 17,
     "fare": 4924
@@ -876,7 +876,7 @@
     "flightNo": 12906,
     "origin": "Istanbul, Turkey",
     "destination": "Cairo, Egypt",
-    "departureDate": "1/19/2022",
+    "departureDate": "3/19/2022",
     "departureTime": "13:15",
     "duration": 6,
     "fare": 3155
