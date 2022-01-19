@@ -11,7 +11,6 @@ import {TableModule} from "primeng/table";
 import {PaginatorModule} from "primeng/paginator";
 import { SearchContainerComponent } from './components/search-container/search-container.component';
 import { FlightsDatatableComponent } from './components/flights-datatable/flights-datatable.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {DropdownModule} from "primeng/dropdown";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CalendarModule} from "primeng/calendar";
@@ -34,7 +33,6 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     FormsModule,
     TableModule,
     PaginatorModule,
-    NgbModule,
     DropdownModule,
     CalendarModule,
     ReactiveFormsModule
