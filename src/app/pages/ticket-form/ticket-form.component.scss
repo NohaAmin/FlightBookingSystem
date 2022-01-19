@@ -1,0 +1,51 @@
+$min-item-width: 8rem;
+:host ::ng-deep .input-item {
+  .p-dropdown, .p-calendar {
+    width: 100% !important;
+    height: 3rem;
+  }
+}
+
+.ticket-form-container {
+  max-width: max-content;
+
+  .ticket-form {
+    max-width: max-content;
+
+    .label-item {
+      min-width: $min-item-width;
+      width: $min-item-width * 1.5;
+      flex: 1;
+      margin-right: 0.75rem;
+      font-weight: bolder;
+    }
+
+    .input-item {
+      min-width: $min-item-width * 2;
+      width: $min-item-width * 3;
+      flex: 2;
+      margin-bottom: 0.75rem;
+    }
+
+    input {
+      border: solid 0.5px #bcc0c4;
+      height: 3rem;
+      padding: 10px;
+
+      &:enabled:hover {
+        border-color: #2196F3;
+      }
+
+      &:focus {
+        outline: 0 none;
+        outline-offset: 0;
+        box-shadow: 0 0 0 0.2rem #a6d5fa;;
+        border-color: #2196F3
+      }
+    }
+
+    button {
+      max-width: max-content;
+    }
+  }
+}

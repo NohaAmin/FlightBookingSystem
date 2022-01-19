@@ -1,20 +1,18 @@
-import {AfterViewInit, ChangeDetectorRef, Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {FlightData} from "../../models/flight-data";
 import {Router} from "@angular/router";
-import {ReplaySubject} from "rxjs";
+import {ReplaySubject, Subscription} from "rxjs";
 
 @Component({
   selector: 'app-flights-datatable',
   templateUrl: './flights-datatable.component.html',
   styleUrls: ['./flights-datatable.component.scss']
 })
-export class FlightsDatatableComponent implements OnInit
-  // , AfterViewInit, OnChanges
-{
+export class FlightsDatatableComponent implements OnInit, OnDestroy {
 
   @Input() flightData$: ReplaySubject<FlightData[]> = new ReplaySubject<FlightData[]>();
   @Input() flightData: FlightData[] = [];
-   allFlightData: FlightData[] = [];
+  allFlightData: FlightData[] = [];
   readonly flightDataHeaders: string[] = ['Flight No.', 'Origin', 'Destination', 'Departure Date', 'Departure Time', 'Arrival Date', 'Arrival Time', 'Fare'];
 
   paginatedFlightDate: FlightData[] = [];
@@ -28,24 +26,17 @@ export class FlightsDatatableComponent implements OnInit
   initialPaginator: { first: number, page: number, pageCount: number, rows: number } =
     {first: 0, page: 0, pageCount: 10, rows: this.rowsPerPage}
 
-  constructor(private router: Router,
-              private cdr: ChangeDetectorRef) {
+  private subs: Subscription = {} as Subscription;
+
+  constructor(private router: Router) {
   }
 
-  // ngOnChanges(changes: SimpleChanges): void {
-  //   console.log('ngOnChanges', this.flightData.length)
-  //   this.totalRecords = this.flightData.length;
-  //   this.showPaginator = (this.totalRecords > 0);
-  //   console.log('totalRecords', this.totalRecords, 'showPaginator', this.showPaginator)
-  // }
-
-  // ngAfterViewInit(): void {
-  //   console.log(this.flightData.length)
-  //   this.cdr.detectChanges()
-  // }
+  ngOnDestroy(): void {
+    this.subs.unsubscribe();
+  }
 
   ngOnInit(): void {
-    this.flightData$.subscribe((flights) => {
+    this.subs = this.flightData$.subscribe((flights) => {
       this.totalRecords = flights.length;
       this.showPaginator = (this.totalRecords > 0);
       this.allFlightData = flights;
@@ -54,7 +45,7 @@ export class FlightsDatatableComponent implements OnInit
   }
 
   onSelectingItem(item: FlightData) {
-    this.router.navigateByUrl(`dashboard/${item.flightNo}/ticket`).then();
+    this.router.navigateByUrl(`dashboard/ticket-form/${item.flightNo}/purchase`).then();
   }
 
   navigatePage(selected: { first: number, page: number, pageCount: number, rows: number }) {

@@ -1,23 +1,13 @@
-<div class="container-fluid position-relative p-0">
+<h2 class="pb-3 fw-bolder">{{'Flights Schedule'}}</h2>
 
-  <div class="homepage-header bg-primary d-flex align-items-center px-3">
-    <label class="fs-3 fw-bolder text-light">{{'Flight Booking Schedule'}}</label>
-  </div>
+<div *ngIf="!!flightData.length"
+     class="d-flex flex-column w-100  gap-5">
+  <app-search-container
+    [allFlights]="flightData"
+    (searchFlights)="showingFilteredFlights($event)"
+  ></app-search-container>
 
-  <div class="homepage-body d-flex flex-column p-5">
-    <router-outlet></router-outlet>
-
-    <div class="d-flex flex-column w-100  gap-5">
-      <app-search-container
-        *ngIf="!!flightData.length" [allFlights]="flightData"
-        (searchFlights)="showingFilteredFlights($event)"
-      ></app-search-container>
-
-<!--        *ngIf="!!flightData.length"-->
-<!--        [flightData]="displayedFlights"-->
-      <app-flights-datatable
-        [flightData$]="displayedFlights$"
-      ></app-flights-datatable>
-    </div>
-  </div>
+  <app-flights-datatable
+    [flightData$]="displayedFlights$"
+  ></app-flights-datatable>
 </div>

@@ -1,1 +1,149 @@
-<p>ticket-form works!</p>
+<div *ngIf="isRendered" class="ticket-form-container m-auto">
+<div class="ticket-dialog d-flex w-100 justify-content-end">
+</div>
+
+  <h2 class="pb-0 fw-bolder">{{'Ticket Form'}}</h2>
+  <label class="fs-5 fw-light">
+    {{'Fill in the name like that in the passport'}}
+  </label>
+
+  <form [formGroup]="ticketForm" (ngSubmit)="onSubmit()"
+        class="ticket-form m-auto d-flex flex-column gap-3 pt-3">
+
+    <!-- First Name -->
+    <div class="d-flex flex-wrap gap-1">
+      <label class="label-item" for="firstName">First Name
+        <span class="text-danger fs-5 ps-2 fw-bold">*</span></label>
+      <div class="input-item d-flex flex-column">
+        <input type="text" id="firstName" name="firstName" formControlName="firstName">
+        <div class="text-danger"
+             *ngIf="!f.firstName?.valid && (f.firstName?.dirty ||f.firstName?.touched)">
+          <div *ngIf="f.firstName.errors?.required">First Name is required</div>
+          <div *ngIf="f.firstName.errors?.noWhiteSpace">Whitespace is not allowed</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle Name -->
+    <div class="d-flex flex-wrap gap-1">
+      <label class="label-item" for="middleName">Middle Name
+        <span class="text-danger fs-5 ps-2 fw-bold">*</span></label>
+      <div class="input-item d-flex flex-column">
+        <input type="text" id="middleName" name="middleName" formControlName="middleName">
+        <div class="text-danger" *ngIf="!f.middleName?.valid &&
+      (f.middleName?.dirty ||f.middleName?.touched)">
+          <div *ngIf="f.middleName.errors?.required">Middle Name is required</div>
+          <div *ngIf="f.middleName.errors?.noWhiteSpace">Whitespace is not allowed</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Last Name -->
+    <div class="d-flex flex-wrap gap-1">
+      <label class="label-item" for="lastName">Last Name
+        <span class="text-danger fs-5 ps-2 fw-bold">*</span></label>
+      <div class="input-item d-flex flex-column">
+        <input type="text" id="lastName" name="lastName" formControlName="lastName">
+        <div class="text-danger" *ngIf="!f.lastName?.valid &&
+      (f.lastName?.dirty ||f.lastName?.touched)">
+          <div *ngIf="f.lastName.errors?.required">Last Name is required</div>
+          <div *ngIf="f.lastName.errors?.noWhiteSpace">Whitespace is not allowed</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Birth Date -->
+    <div class="d-flex flex-wrap gap-1">
+      <label class="label-item" for="birthDate">Birth Date
+        <span class="text-danger fs-5 ps-2 fw-bold">*</span></label>
+      <div class="input-item d-flex flex-column">
+        <p-calendar
+          [maxDate]="maxAllowedDate"
+          dateFormat="M d,yy"
+          selectionMode="single" [showIcon]="true"
+          [readonlyInput]="true"
+          placeholder="Select Birth Date"
+          id="birthDate" name="birthDate" formControlName="birthDate"
+        ></p-calendar>
+        <div class="text-danger" *ngIf="!f.birthDate?.valid &&
+      (f.birthDate?.dirty ||f.birthDate?.touched)">
+          <div *ngIf="f.birthDate.errors?.required">Birth date is required</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Route Origin -->
+    <div class="d-flex flex-wrap gap-1">
+      <label class="label-item" for="routeOrigin">Route Origin </label>
+      <input class="input-item" readonly type="text" id="routeOrigin" name="routeOrigin" formControlName="routeOrigin">
+    </div>
+
+    <!-- Route Destination -->
+    <div class="d-flex flex-wrap gap-1">
+      <label class="label-item" for="routeDestination">Route Destination </label>
+      <input class="input-item" readonly type="text" id="routeDestination" name="routeDestination"
+             formControlName="routeDestination">
+    </div>
+
+    <!-- Flight Number -->
+    <div class="d-flex flex-wrap gap-1">
+      <label class="label-item" for="flightNumber">Flight Number </label>
+      <input class="input-item" type="text" id="flightNumber" name="flightNumber" formControlName="flightNumber">
+    </div>
+
+    <!-- Seat Class -->
+    <div class="d-flex flex-wrap gap-1">
+      <label class="label-item" for="seatClass">Seat Class
+        <span class="text-danger fs-5 ps-2 fw-bold">*</span></label>
+      <div class="input-item d-flex flex-column">
+        <p-dropdown
+          [options]="seatClass.sort()"
+          placeholder="Select Seat Class"
+          id="seatClass" name="seatClass" formControlName="seatClass"
+        ></p-dropdown>
+        <div class="text-danger" *ngIf="!f.seatClass?.valid &&
+      (f.seatClass?.dirty ||f.seatClass?.touched)">
+          <div *ngIf="f.seatClass.errors?.required">Seat class is required</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Departure Date -->
+    <div class="d-flex flex-wrap gap-1">
+      <label class="label-item" for="departureDate">Departure Date </label>
+      <input class="input-item" readonly type="text" id="departureDate" name="departureDate"
+             formControlName="departureDate">
+    </div>
+
+    <!-- Departure Time -->
+    <div class="d-flex flex-wrap gap-1">
+      <label class="label-item" for="departureTime">Departure Time</label>
+      <input class="input-item" readonly type="text" id="departureTime" name="departureTime"
+             formControlName="departureTime">
+    </div>
+
+    <!-- Arrival Date -->
+    <div class="d-flex flex-wrap gap-1">
+      <label class="label-item" for="arrivalDate">Arrival Date </label>
+      <input class="input-item" readonly type="text" id="arrivalDate" name="arrivalDate" formControlName="arrivalDate">
+    </div>
+
+    <!-- Arrival Time -->
+    <div class="d-flex flex-wrap gap-1">
+      <label class="label-item" for="arrivalTime">Arrival Time</label>
+      <input class="input-item" readonly type="text" id="arrivalTime" name="arrivalTime" formControlName="arrivalTime">
+    </div>
+
+    <!-- Flight Fare -->
+    <div class="d-flex flex-wrap gap-1">
+      <label class="label-item" for="flightFare">Flight Fare</label>
+      <input class="input-item" readonly type="text" id="flightFare" name="flightFare" formControlName="flightFare">
+    </div>
+
+    <button type="submit" [disabled]="!ticketForm.valid"
+            class="btn btn-primary fs-3 text-light px-3 py-1 border-primary rounded"
+    >{{'Submit'}}</button>
+  </form>
+</div>
+
+

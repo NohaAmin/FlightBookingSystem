@@ -462,7 +462,7 @@
     "flightNo": 15074,
     "origin": "Cairo, Egypt",
     "destination": "Istanbul, Turkey",
-    "departureDate": "1/19/2022",
+    "departureDate": "1/18/2022",
     "departureTime": "01:45",
     "duration": 3,
     "fare": 3809
@@ -597,7 +597,7 @@
     "flightNo": 11133,
     "origin": "Hurghada, Egypt",
     "destination": "Paris, France",
-    "departureDate": "1/19/2022",
+    "departureDate": "1/18/2022",
     "departureTime": "08:45",
     "duration": 8,
     "fare": 4727
@@ -696,7 +696,7 @@
     "flightNo": 12537,
     "origin": "Luxor, Egypt",
     "destination": "San Francisco, US",
-    "departureDate": "1/19/2022",
+    "departureDate": "1/18/2022",
     "departureTime": "13:30",
     "duration": 6,
     "fare": 2614
@@ -840,7 +840,7 @@
     "flightNo": 13777,
     "origin": "Luxor, Egypt",
     "destination": "London, UK",
-    "departureDate": "1/19/2022",
+    "departureDate": "1/18/2022",
     "departureTime": "02:15",
     "duration": 5,
     "fare": 3240
@@ -1164,7 +1164,7 @@
     "flightNo": 14323,
     "origin": "Istanbul, Turkey",
     "destination": "Hurghada, Egypt",
-    "departureDate": "1/21/2022",
+    "departureDate": "1/11/2022",
     "departureTime": "09:00",
     "duration": 9,
     "fare": 2848
@@ -1173,7 +1173,7 @@
     "flightNo": 12592,
     "origin": "London, UK",
     "destination": "Alexandria, Egypt",
-    "departureDate": "1/21/2022",
+    "departureDate": "1/11/2022",
     "departureTime": "08:15",
     "duration": 20,
     "fare": 4227
@@ -1245,7 +1245,7 @@
     "flightNo": 11227,
     "origin": "Istanbul, Turkey",
     "destination": "Hurghada, Egypt",
-    "departureDate": "1/21/2022",
+    "departureDate": "1/11/2022",
     "departureTime": "09:45",
     "duration": 9,
     "fare": 3625
@@ -1272,7 +1272,7 @@
     "flightNo": 14705,
     "origin": "Paris, France",
     "destination": "Luxor, Egypt",
-    "departureDate": "1/21/2022",
+    "departureDate": "1/11/2022",
     "departureTime": "10:30",
     "duration": 11,
     "fare": 1490
@@ -1371,7 +1371,7 @@
     "flightNo": 14141,
     "origin": "San Francisco, US",
     "destination": "Luxor, Egypt",
-    "departureDate": "1/21/2022",
+    "departureDate": "1/11/2022",
     "departureTime": "04:30",
     "duration": 5,
     "fare": 3476
@@ -1443,7 +1443,7 @@
     "flightNo": 13197,
     "origin": "Paris, France",
     "destination": "Luxor, Egypt",
-    "departureDate": "1/21/2022",
+    "departureDate": "1/11/2022",
     "departureTime": "03:45",
     "duration": 11,
     "fare": 1535
@@ -1452,7 +1452,7 @@
     "flightNo": 14009,
     "origin": "Istanbul, Turkey",
     "destination": "Alexandria, Egypt",
-    "departureDate": "1/21/2022",
+    "departureDate": "1/11/2022",
     "departureTime": "03:15",
     "duration": 5,
     "fare": 3530
@@ -1623,7 +1623,7 @@
     "flightNo": 14212,
     "origin": "Istanbul, Turkey",
     "destination": "Alexandria, Egypt",
-    "departureDate": "1/21/2022",
+    "departureDate": "1/11/2022",
     "departureTime": "10:00",
     "duration": 5,
     "fare": 3278

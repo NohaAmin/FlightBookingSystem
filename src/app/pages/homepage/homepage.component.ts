@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {FlightsDataService} from "../../services/flights-data.service";
 import {FlightData} from "../../models/flight-data";
 import {ReplaySubject} from "rxjs";
@@ -8,13 +8,17 @@ import {ReplaySubject} from "rxjs";
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.scss']
 })
-export class HomepageComponent implements OnInit {
+export class HomepageComponent implements OnInit, OnDestroy {
 
   flightData: FlightData[] = [];
   displayedFlights: FlightData[] = [];
   displayedFlights$: ReplaySubject<FlightData[]> = new ReplaySubject<FlightData[]>();
 
   constructor(private flightsDataService: FlightsDataService) {
+  }
+
+  ngOnDestroy(): void {
+    this.displayedFlights$.complete();
   }
 
   ngOnInit(): void {
