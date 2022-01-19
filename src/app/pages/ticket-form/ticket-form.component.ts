@@ -31,9 +31,9 @@ export class TicketFormComponent implements OnInit {
     const ticketId: number = +this.activatedRoute.snapshot.paramMap.get('id')!
     this.flightsDataService.getFlightById(ticketId).subscribe((flight) => {
       this.ticketForm = new FormGroup({
-        'firstName': new FormControl('', [Validators.required, this.validationService.noWhiteSpaceValidator]),
-        'middleName': new FormControl('', [Validators.required, this.validationService.noWhiteSpaceValidator]),
-        'lastName': new FormControl('', [Validators.required, this.validationService.noWhiteSpaceValidator]),
+        'firstName': new FormControl('', [Validators.required, Validators.pattern("[a-zA-Z ]*"), this.validationService.noWhiteSpaceValidator]),
+        'middleName': new FormControl('', [Validators.required, Validators.pattern("[a-zA-Z ]*"), this.validationService.noWhiteSpaceValidator]),
+        'lastName': new FormControl('', [Validators.required, Validators.pattern("[a-zA-Z ]*"), this.validationService.noWhiteSpaceValidator]),
         'birthDate': new FormControl('', [Validators.required]),
         'routeOrigin': new FormControl(flight.origin),
         'routeDestination': new FormControl(flight.destination),

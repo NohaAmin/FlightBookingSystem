@@ -11,7 +11,7 @@ import isAfter from "date-fns/isAfter";
 })
 export class FlightsDataService {
 
-  constructor(protected http: HttpClient) {
+  constructor(private http: HttpClient) {
   }
 
   getFlightData(): Observable<FlightData[]> {

@@ -11,12 +11,10 @@ import {ReplaySubject, Subscription} from "rxjs";
 export class FlightsDatatableComponent implements OnInit, OnDestroy {
 
   @Input() flightData$: ReplaySubject<FlightData[]> = new ReplaySubject<FlightData[]>();
-  @Input() flightData: FlightData[] = [];
   allFlightData: FlightData[] = [];
   readonly flightDataHeaders: string[] = ['Flight No.', 'Origin', 'Destination', 'Departure Date', 'Departure Time', 'Arrival Date', 'Arrival Time', 'Fare'];
 
   paginatedFlightDate: FlightData[] = [];
-
   totalRecords: number = 10;
   rowsPerPage: number = 20;
   selectedPageNumber: number = 0;

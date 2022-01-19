@@ -1,6 +1,6 @@
 <div *ngIf="isRendered" class="ticket-form-container m-auto">
-<div class="ticket-dialog d-flex w-100 justify-content-end">
-</div>
+  <div class="ticket-dialog d-flex w-100 justify-content-end">
+  </div>
 
   <h2 class="pb-0 fw-bolder">{{'Ticket Form'}}</h2>
   <label class="fs-5 fw-light">
@@ -16,9 +16,9 @@
         <span class="text-danger fs-5 ps-2 fw-bold">*</span></label>
       <div class="input-item d-flex flex-column">
         <input type="text" id="firstName" name="firstName" formControlName="firstName">
-        <div class="text-danger"
-             *ngIf="!f.firstName?.valid && (f.firstName?.dirty ||f.firstName?.touched)">
+        <div class="text-danger" *ngIf="!f.firstName?.valid && (f.firstName?.dirty ||f.firstName?.touched)">
           <div *ngIf="f.firstName.errors?.required">First Name is required</div>
+          <div *ngIf="f.firstName.errors?.pattern">Name must be with alphabetic only</div>
           <div *ngIf="f.firstName.errors?.noWhiteSpace">Whitespace is not allowed</div>
         </div>
       </div>
@@ -30,9 +30,9 @@
         <span class="text-danger fs-5 ps-2 fw-bold">*</span></label>
       <div class="input-item d-flex flex-column">
         <input type="text" id="middleName" name="middleName" formControlName="middleName">
-        <div class="text-danger" *ngIf="!f.middleName?.valid &&
-      (f.middleName?.dirty ||f.middleName?.touched)">
+        <div class="text-danger" *ngIf="!f.middleName?.valid && (f.middleName?.dirty ||f.middleName?.touched)">
           <div *ngIf="f.middleName.errors?.required">Middle Name is required</div>
+          <div *ngIf="f.middleName.errors?.pattern">Name must be with alphabetic only</div>
           <div *ngIf="f.middleName.errors?.noWhiteSpace">Whitespace is not allowed</div>
         </div>
       </div>
@@ -44,9 +44,9 @@
         <span class="text-danger fs-5 ps-2 fw-bold">*</span></label>
       <div class="input-item d-flex flex-column">
         <input type="text" id="lastName" name="lastName" formControlName="lastName">
-        <div class="text-danger" *ngIf="!f.lastName?.valid &&
-      (f.lastName?.dirty ||f.lastName?.touched)">
+        <div class="text-danger" *ngIf="!f.lastName?.valid && (f.lastName?.dirty ||f.lastName?.touched)">
           <div *ngIf="f.lastName.errors?.required">Last Name is required</div>
+          <div *ngIf="f.lastName.errors?.pattern">Name must be with alphabetic only</div>
           <div *ngIf="f.lastName.errors?.noWhiteSpace">Whitespace is not allowed</div>
         </div>
       </div>
@@ -65,8 +65,7 @@
           placeholder="Select Birth Date"
           id="birthDate" name="birthDate" formControlName="birthDate"
         ></p-calendar>
-        <div class="text-danger" *ngIf="!f.birthDate?.valid &&
-      (f.birthDate?.dirty ||f.birthDate?.touched)">
+        <div class="text-danger" *ngIf="!f.birthDate?.valid &&(f.birthDate?.dirty ||f.birthDate?.touched)">
           <div *ngIf="f.birthDate.errors?.required">Birth date is required</div>
         </div>
       </div>
@@ -101,8 +100,7 @@
           placeholder="Select Seat Class"
           id="seatClass" name="seatClass" formControlName="seatClass"
         ></p-dropdown>
-        <div class="text-danger" *ngIf="!f.seatClass?.valid &&
-      (f.seatClass?.dirty ||f.seatClass?.touched)">
+        <div class="text-danger" *ngIf="!f.seatClass?.valid && (f.seatClass?.dirty ||f.seatClass?.touched)">
           <div *ngIf="f.seatClass.errors?.required">Seat class is required</div>
         </div>
       </div>
